@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Outfit', 'Poppins', sans-serif;
+    color: #2d3748;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+/* --- ส่วนของ Flexbox สำหรับส่วนผสม --- */
+.ingredients-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.ingredients-wrapper img {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ingredients-wrapper ul {
+    width: 60%;
+    margin: 0;
+}
+
+/* --- ส่วนกล่องรายการส่วนผสม (ul) --- */
+ul {
+    font-family: Garamond, "Times New Roman", serif; 
+    font-size: 14pt;
+    font-weight: 500;
+    background-color: #fffaf0;
+    border-left: 5px solid #dd6b20;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    padding: 30px 40px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+ul li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* --- ส่วนของกรอบวิธีทำ 1-8 --- */
+.left_page {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step-card {
+    background-color: #fffaf0;
+    border-left: 5px solid #dd6b20;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    padding: 25px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.step-card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 15px auto 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- การตั้งค่าอื่นๆ --- */
+hr {
+    width: 80%;
+    max-width: 600px;
+    border: 0;
+    height: 2px;
+    background: #cbd5e0;
+    margin: 40px 0;
+}
+
+#cinnamon {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #dd6b20;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* --- ทำให้อ่านง่ายขึ้นในมือถือ --- */
+@media (max-width: 768px) {
+    .ingredients-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ingredients-wrapper img, 
+    .ingredients-wrapper ul {
+        width: 100%;
+    }
+}
